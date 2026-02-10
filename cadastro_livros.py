@@ -17,9 +17,11 @@ Estruturas de repetição (while)
 Condicionais (if / elif / else)
 '''
 
-menu = 0 
+def menu():
+    menu = 0 
 while menu !=3:
     print('''
+          Menu Princípal
     [1] - Cadastrar Livro. 
     [2] - Listar Livros.
     [3] - Buscar Livro.
@@ -35,11 +37,12 @@ while menu !=3:
     elif menu == 3:
         busca = input('Qual livro deseja buscar?')
     elif menu == 0:
-        print('Você saiu do programa. ')
+        quit(print('Você saiu do programa. '))
     else:
         print('Opção inválida.')
 print('Você saiu do programa.')
 
+    
 
     
 
